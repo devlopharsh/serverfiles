@@ -48,7 +48,7 @@ const sendEmail = async (to, subject, text, email) => {
     }
 };
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect("mongodb+srv://harsh_kumar:harshkadatabase@firstcluster.lsjcp.mongodb.net/?retryWrites=true&w=majority&appName=Firstcluster")
     .then(() => console.log('database connected'))
     .catch((err) => console.error('ni hua', err))
 
